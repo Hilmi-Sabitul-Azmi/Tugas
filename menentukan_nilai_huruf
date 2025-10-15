@@ -1,0 +1,19 @@
+#menentukan fungsi
+def menentukan_nilai(nilai):
+    if nilai >= 85:
+        return 'A'
+    elif nilai >= 70:
+        return 'B'
+    elif nilai >= 55:
+        return 'C'
+    elif nilai >= 40:
+        return 'D'
+    else:
+        return 'E'
+
+#meminta input dari pengguna 
+nilai = int(input('masukkan nilai :'))
+#membuat variable hasil agar variable nilai dieksekusi bersama fungsi
+hasil = menentukan_nilai(nilai)
+#output
+print('nilai huruf :',hasil)

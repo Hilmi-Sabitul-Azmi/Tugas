@@ -1,0 +1,25 @@
+#menentukan fungsi
+def hitung_diskon (total):
+    if total >= 500_000:
+        persen = 20
+    elif total >= 250_000:
+        persen = 10
+    else :
+        persen = 0
+    return total * persen / 100
+
+print('=====masukkan harga barang disini=====')
+#meminta input dari pengguna
+barang_1 = float(input('masukkan harga (Rp):'))
+barang_2 = float(input('masukkan harga (Rp):'))
+#membuat variable untuk output
+total_belanja = barang_1 + barang_2
+diskon = hitung_diskon(total_belanja)
+total_bayar = total_belanja - diskon
+
+#output
+print('=====struk pembayaran=====')
+print(f'total belanja : Rp. {total_belanja:,.0f}'. replace(',','.'))
+print(f'diskon : Rp. {diskon:,.0f}'. replace(',','.'))
+print(f'total bayar : Rp. {total_bayar:,.0f}'. replace(',','.'))
+

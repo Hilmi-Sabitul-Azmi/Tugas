@@ -1,0 +1,15 @@
+#menentukan fungsi
+def menentukan_bilangan(bilangan):
+    if bilangan > 0:
+        return 'positif'
+    elif bilangan < 0:
+        return 'negatif'
+    elif bilangan == 0:
+        return 'nol'
+
+#meminta input dari pengguna
+bilangan = int(input('masukaan bilangan :'))
+#membuat variable hasil agar variable bilangan di eksekusi bersama fungsi
+hasil = menentukan_bilangan(bilangan)
+#output
+print('bilangan',hasil)
