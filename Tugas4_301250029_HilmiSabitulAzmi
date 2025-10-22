@@ -1,0 +1,20 @@
+# 1. Program pola piramida terbalik :
+for i in range(5,0,-1):
+    print('*'*i)
+
+# 2. Program simulasi login :
+percobaan = 3
+
+while percobaan > 0:
+    username = input('Masukkan username :')
+    password = input('Masukkan password :')
+
+    if username == 'admin' and password == 'python':
+        print('Login berhasil')
+        break
+    else :
+        percobaan -= 1
+        print(f'username atau password salah, {percobaan} kali kesempatan')
+
+    if percobaan == 0:
+        print('Login gagal coba lagi nanti')
